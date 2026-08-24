@@ -23,3 +23,18 @@ let b="10";
 
 console.log(a==b);
 console.log(a===b);
+
+let x=30;
+let y=20;
+
+
+if(x>y){
+    console.log("x is greater than y");
+}
+else if(x<y){
+    console.log("x is less than y");
+}
+
+else{
+    console.log("x is equal to y");
+}
