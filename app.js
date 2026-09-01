@@ -170,11 +170,11 @@ let number=0;
 //-------------------   Value increase and decrease-----------------
 
 function increaseValue(){
-    h1.innerText="Srimal"+number++;
+    h1.innerText="Srimal"+( ++number);
     console.log("value increased");
 }
 
 function decreaseValue(){
-    h1.innerText="Srimal"+number--;
+    h1.innerText="Srimal"+(--number);
     console.log("value decreased");
 }
