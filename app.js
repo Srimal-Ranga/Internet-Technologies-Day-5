@@ -87,25 +87,94 @@
 
 //Create a Object
 
+// let customer1={
+//     name:"Srimal",
+//     age:24,
+//     address:"241 getalawa",
+//     salary:180000,
+//     items:["item1","item2","item3"],
+//     father:{
+//         name:"John",
+//         age:50,
+//         address:"Colombo"
+//     }
+// }
+
+// console.log(customer1.name);
+// console.log(customer1.age);
+// console.log(customer1.address);
+// console.log(customer1.salary);
+// console.log(customer1.items);
+// console.log(customer1.father.name);
+// console.log(customer1.father.age);
+// console.log(customer1.father.address);
+// console.log(customer1.father);
+
+
+
+//------------------DOM MANIPULATION--------------------
+
+// //DOM - Document Object Model
+
+// console.log(document);
+
+// let heading =document.getElementById("h1")
+// heading.innerText="Srimal";
+// console.log(heading);
+
+//-------------------------------------------create cunstructor function
+
+// class Customer{
+//     name;
+//     age;
+//     addrerss;
+
+//     constructor(name,age,address){
+//         this.name=name;
+//         this.age=age;
+//         this.addrerss=address;
+//     }
+// }
+
+// let customer=new Customer("Srimal",24,"241 getalawa");
+// console.log(customer);
+
+//-------------------------secont way
+
 let customer1={
     name:"Srimal",
     age:24,
-    address:"241 getalawa",
-    salary:180000,
-    items:["item1","item2","item3"],
-    father:{
-        name:"John",
-        age:50,
-        address:"Colombo"
-    }
+    address:"241 getalawa"
 }
 
-console.log(customer1.name);
-console.log(customer1.age);
-console.log(customer1.address);
-console.log(customer1.salary);
-console.log(customer1.items);
-console.log(customer1.father.name);
-console.log(customer1.father.age);
-console.log(customer1.father.address);
-console.log(customer1.father);
+
+// document.write("<h1>Srimal World</h1>");
+
+console.log(customer1);
+// console.log(document.title);_
+
+let change=document.getElementById("h1");
+
+console.log(change);
+
+// h1.innerText="Srimal";
+let number=0;
+// function changeText(){
+// console.log("Button clicked");
+// h1.innerText="Srimal"+number++;
+
+
+// }
+
+
+//-------------------   Value increase and decrease-----------------
+
+function increaseValue(){
+    h1.innerText="Srimal"+number++;
+    console.log("value increased");
+}
+
+function decreaseValue(){
+    h1.innerText="Srimal"+number--;
+    console.log("value decreased");
+}
