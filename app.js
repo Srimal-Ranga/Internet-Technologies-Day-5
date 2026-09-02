@@ -169,12 +169,51 @@ let number=0;
 
 //-------------------   Value increase and decrease-----------------
 
-function increaseValue(){
-    h1.innerText="Srimal"+( ++number);
-    console.log("value increased");
+// function increaseValue(){
+//     h1.innerText="Srimal"+( ++number);
+//     console.log("value increased");
+// }
+
+// function decreaseValue(){
+//     h1.innerText="Srimal"+(--number);
+//     console.log("value decreased");
+// }
+
+// function changeText(){
+//     let input=document.getElementById("input");
+//     h1.innerText=input.value;
+//     console.log("Button clicked");
+// }
+
+
+// ---------------------------------------------------------------------
+
+//                  ADD and SUB Functions
+                
+// ---------------------------------------------------------------------
+
+
+
+function add(){
+
+    let num1=document.getElementById("num1").value;
+    let num2=document.getElementById("num2").value;
+
+    let result=parseInt(num1)+parseInt(num2);
+
+    output.innerText="Result: "+result;
+    console.log("Add button clicked");
 }
 
-function decreaseValue(){
-    h1.innerText="Srimal"+(--number);
-    console.log("value decreased");
+function sub(){
+
+    let num1=document.getElementById("num1").value;
+    let num2=document.getElementById("num2").value;
+
+    let result=parseInt(num1)-parseInt(num2);
+
+    output.innerText="Result: "+result;
+    console.log("Subtract button clicked");
 }
+
+
