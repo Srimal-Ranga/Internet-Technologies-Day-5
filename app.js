@@ -194,26 +194,58 @@ let number=0;
 
 
 
-function add(){
+// function add(){
 
-    let num1=document.getElementById("num1").value;
-    let num2=document.getElementById("num2").value;
+//     let num1=document.getElementById("num1").value;
+//     let num2=document.getElementById("num2").value;
 
-    let result=parseInt(num1)+parseInt(num2);
+//     let result=parseInt(num1)+parseInt(num2);
 
-    output.innerText="Result: "+result;
-    console.log("Add button clicked");
+//     output.innerText="Result: "+result;
+//     console.log("Add button clicked");
+// }
+
+// function sub(){
+
+//     let num1=document.getElementById("num1").value;
+//     let num2=document.getElementById("num2").value;
+
+//     let result=parseInt(num1)-parseInt(num2);
+
+//     output.innerText="Result: "+result;
+//     console.log("Subtract button clicked");
+// }
+
+
+
+// ---------------------------------------------------------------------
+//                  Save Customer Details
+// ---------------------------------------------------------------------
+
+
+let customers=[];
+
+
+function submitForm(){
+
+    let name=document.getElementById("txtName").value;
+    let age=document.getElementById("txtAge").value;
+    let address=document.getElementById("txtAddress").value;
+    let phone=document.getElementById("txtPhone").value;
+    let email=document.getElementById("txtEmail").value;
+
+    let customer={
+        name:name,
+        age:age,
+        address:address,
+        phone:phone,
+        email:email
+    };
+
+    customers.push(customer);
+    console.log(customers);
+
 }
 
-function sub(){
 
-    let num1=document.getElementById("num1").value;
-    let num2=document.getElementById("num2").value;
-
-    let result=parseInt(num1)-parseInt(num2);
-
-    output.innerText="Result: "+result;
-    console.log("Subtract button clicked");
-}
-
-
+function displayCustomers(){

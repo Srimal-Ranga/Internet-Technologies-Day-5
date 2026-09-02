@@ -102,7 +102,7 @@
 
 
     <!-- ---------------------------------------------------------------------------------------------------------------- --> 
-     <br>
+     <!-- <br>
      <br>
 
      
@@ -115,7 +115,37 @@
     <br><br>
 
     <input type="button" value="+" onclick="add()">
-    <input type="button" value="-" onclick="sub()">
+    <input type="button" value="-" onclick="sub()"> -->
+
+
+<!-- 
+    ----------------------------------------------------------------------
+
+    Customer Form
+
+    ---------------------------------------------------------------------- -->
+    <H1><center>Customer Form </center></H1><br>
+
+    <input type="text" id="txtName" placeholder="Enter your name"><br><br>
+    <input type="text" id="txtAddress" placeholder="Enter your address"><br><br>
+    <input type="test" id="txtAge" placeholder="Enter your age"><br><br>
+    <input type="text" id="txtEmail" placeholder="Enter your email"><br><br>
+    <input type="text" id="txtPhone" placeholder="Enter your phone number"><br><br>
+    <input type="button" id="btnSubmit" value="Submit" onclick="submitForm()"><br><br><br>
+
+    <table border="1" id="customerTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Age</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+    </table>
+       
+        <input type="button" value="Refash" onclick="displayCustomers()">
 
    <script src="app.js"></script>
 </body>
