@@ -244,8 +244,34 @@ function submitForm(){
 
     customers.push(customer);
     console.log(customers);
+    displayCustomers();
 
 }
 
 
 function displayCustomers(){
+
+    let table=document.getElementById("tblCustomers");
+
+    let body="";
+    for(let i=0;i<customers.length;i++){
+
+        body+= `<tr>
+    <th>${customers[i].name}</th>
+    <th>${customers[i].address}</th>
+    <th>${customers[i].age}</th>
+    <th>${customers[i].phone}</th>
+    <th>${customers[i].email}</th>
+    </tr>`;
+
+
+    }
+
+     tblCustomers.innerHTML+=body;
+
+  
+
+    console.log(tblCustomers);
+
+
+}
