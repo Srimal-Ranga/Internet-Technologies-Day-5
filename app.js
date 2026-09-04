@@ -223,55 +223,105 @@ let number=0;
 // ---------------------------------------------------------------------
 
 
-let customers=[];
+// let customers=[];
 
 
-function submitForm(){
+// function submitForm(){
 
-    let name=document.getElementById("txtName").value;
-    let age=document.getElementById("txtAge").value;
-    let address=document.getElementById("txtAddress").value;
-    let phone=document.getElementById("txtPhone").value;
-    let email=document.getElementById("txtEmail").value;
+//     let name=document.getElementById("txtName").value;
+//     let age=document.getElementById("txtAge").value;
+//     let address=document.getElementById("txtAddress").value;
+//     let phone=document.getElementById("txtPhone").value;
+//     let email=document.getElementById("txtEmail").value;
 
-    let customer={
-        name:name,
-        age:age,
-        address:address,
-        phone:phone,
-        email:email
-    };
+//     let customer={
+//         name:name,
+//         age:age,
+//         address:address,
+//         phone:phone,
+//         email:email
+//     };
 
-    customers.push(customer);
-    console.log(customers);
-    displayCustomers();
+//     customers.push(customer);
+//     console.log(customers);
+//     displayCustomers();
 
-}
-
-
-function displayCustomers(){
-
-    let table=document.getElementById("tblCustomers");
-
-    let body="";
-    for(let i=0;i<customers.length;i++){
-
-        body+= `<tr>
-    <th>${customers[i].name}</th>
-    <th>${customers[i].address}</th>
-    <th>${customers[i].age}</th>
-    <th>${customers[i].phone}</th>
-    <th>${customers[i].email}</th>
-    </tr>`;
+// }
 
 
-    }
+// function displayCustomers(){
 
-     tblCustomers.innerHTML+=body;
+//     let table=document.getElementById("tblCustomers");
+
+//     let body="";
+//     for(let i=0;i<customers.length;i++){
+
+//         body+= `<tr>
+//     <th>${customers[i].name}</th>
+//     <th>${customers[i].address}</th>
+//     <th>${customers[i].age}</th>
+//     <th>${customers[i].phone}</th>
+//     <th>${customers[i].email}</th>
+//     </tr>`;
+
+
+//     }
+
+//      tblCustomers.innerHTML+=body;
 
   
 
-    console.log(tblCustomers);
+//     console.log(tblCustomers);
 
 
-}
+// }
+
+
+
+//---------------------  Random Number Generator -----------------------------
+
+// let num = Math.random()*10;
+
+// let newNumber=Math.floor(num);
+
+// console.log(newNumber);
+
+// const customerList = [];
+
+// customerList.push(1);
+// customerList.push(2);
+// customerList.push(3);
+// customerList.push(4);
+// customerList.push(5);
+
+// let revArray = customerList.reverse();
+
+
+// console.log(customerList);
+// console.log(revArray);
+
+
+const products = [
+    { name: "Product 1", stockIn:true },
+    { name: "Product 2", stockIn:false },
+    { name: "Product 3", stockIn:true },
+    { name: "Product 4", stockIn:false },
+    { name: "Product 5", stockIn:true },
+  ];
+
+
+//   let inStockItems = products.filter(product => product.stockIn === true);
+
+  let inStockItems=products.filter(
+    function(product){
+        return productFilter(product);
+    }
+  )
+
+
+
+  function productFilter(product){
+    return product.stockIn === true;
+  }
+
+  console.log(inStockItems);
